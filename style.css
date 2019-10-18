@@ -17,10 +17,10 @@
                 background-color: blue;
                 }
 
-                div.small{
+                .small{
                     display: none;
                 }
-                div.medium{
+                .medium{
                     display: none;
                 }
             
@@ -33,19 +33,28 @@
                 background-color: green;
                 }
 
-                div.small{
+                .small{
                     display: none;
                 }
                 
-                div.large{
+                .large{
                     display: none;
                 }
-               .flexcontainer > div{
-                    flex-grow: 6;
+               .flexcontainer > .first{
+                    flex: 2;
                 }
-        
+                .flexcontainer > .second{
+                    flex:1;
+                }
+                .flexcontainer > .third{
+                    width: 100%;
+                }
+                .flexcontainer{
+                    flex-wrap: wrap;
+                }
+
          
-        }
+    }
 
   @media only screen and (max-width: 600px)     
   {
@@ -54,12 +63,12 @@
                     background-color: red;
                  }
             
-            div.medium {
+            .medium {
         
                     display: none;
                         }
            
-            div.large   {
+            .large   {
                     
                 display: none;
                          }
